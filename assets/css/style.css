@@ -463,6 +463,107 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.75);
 }
 
+/* fifth ================================================================================== */
+.fifth {
+  background: url(../img/background1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.fifth .fifth__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: calc(20px + (70 - 20) * ((100vw - 320px) / (2560 - 320))) calc(10px + (330 - 10) * ((100vw - 320px) / (2560 - 320)));
+  text-align: center;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(49, 31, 87, 0.85)), to(rgba(15, 11, 47, 0.85)));
+  background: linear-gradient(to left, rgba(49, 31, 87, 0.85), rgba(15, 11, 47, 0.85));
+}
+.fifth .fifth__wrapper .fifth__text p:nth-child(1) {
+  font-family: "Playfair Display", serif;
+  font-size: calc(22px + (26 - 22) * ((100vw - 320px) / (2560 - 320)));
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.fifth .fifth__wrapper .fifth__text p:nth-child(2) {
+  margin: 15px 0 calc(10px + (18 - 10) * ((100vw - 320px) / (2560 - 320))) 0;
+  font-family: "Playfair Display", serif;
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2560 - 320)));
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  color: rgba(255, 255, 255, 0.75);
+}
+.fifth .fifth__wrapper .fifth__text span {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.fifth .fifth__wrapper .fifth__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: calc(10px + (50 - 10) * ((100vw - 320px) / (2560 - 320))) 0 calc(20px + (60 - 20) * ((100vw - 320px) / (2560 - 320))) 0;
+}
+.fifth .fifth__wrapper .fifth__items .fifth__item-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  padding: calc(5px + (10 - 5) * ((100vw - 320px) / (2560 - 320)));
+}
+.fifth .fifth__wrapper .fifth__items .fifth__item-wrapper .fifth__item .fifth__img {
+  width: 100%;
+  height: calc(140px + (420 - 140) * ((100vw - 320px) / (2560 - 320)));
+  background: rgba(255, 255, 255, 0.85);
+}
+.fifth .fifth__wrapper .fifth__items .fifth__item-wrapper .fifth__item .fifth__description {
+  padding: 0 10px calc(10px + (30 - 10) * ((100vw - 320px) / (2560 - 320))) 10px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.fifth .fifth__wrapper .fifth__items .fifth__item-wrapper .fifth__item .fifth__description p:nth-child(1) {
+  margin: 20px 0 5px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2560 - 320)));
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+.fifth .fifth__wrapper .fifth__items .fifth__item-wrapper .fifth__item .fifth__description p:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  font-size: calc(13px + (17 - 13) * ((100vw - 320px) / (2560 - 320)));
+  line-height: 1.2;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+.fifth .fifth__wrapper .fifth__button p {
+  margin: 0 0 25px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2560 - 320)));
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: #f3f3f3;
+}
+
 /* OTHER ================================================================================== */
 .mainBTN {
   padding: 12px 15px;
@@ -632,7 +733,10 @@ body {
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
   }
-  .fourth .fourth__items .fourth__wrapper .fourth__item .fourth__img img {
-    height: 40px;
+
+  .fifth .fifth__wrapper .fifth__items .fifth__item-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
   }
 }
