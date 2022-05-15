@@ -742,7 +742,6 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 0;
-  border: 1px solid orange;
 }
 .seventh .seventh__wrapper .seventh__mini-slider .seventh__mini-wrapper .seventh__mini-slide .seventh__img img {
   width: 45px;
