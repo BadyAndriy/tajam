@@ -124,6 +124,10 @@ h1, h2, h3, h4, h5, h6 {
 .header .header__logo a img {
   margin: 0 10px 0 0;
 }
+.header .header__logo a:hover {
+  -webkit-filter: hue-rotate(180deg);
+          filter: hue-rotate(180deg);
+}
 .header .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -591,6 +595,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #413d4b;
 }
 .sixth .sixth__text a {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,12 +607,36 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: 300;
   letter-spacing: 0.05em;
-  color: #413d4b;
+  color: rgba(0, 0, 0, 0.5);
 }
 .sixth .sixth__text a img {
   width: 8px;
   height: 13px;
   margin: 0 0 0 10px;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.sixth .sixth__text a:before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: -5%;
+  width: 0;
+  height: 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0.2);
+}
+.sixth .sixth__text a:hover {
+  color: #000;
+}
+.sixth .sixth__text a:hover img {
+  opacity: 1;
+}
+.sixth .sixth__text a:hover:before {
+  width: 110%;
+  background: #000;
 }
 .sixth .sixth__items {
   display: -webkit-box;
