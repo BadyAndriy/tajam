@@ -207,16 +207,19 @@
 			opacity: 0.6;
 			transition: 0.3s;
 			border: 3px solid #fff;
+			img {
+				height: calc(30px + (45 - 30) * ((100vw - 320px) / (2560 - 320)));
+			}
 		}
 		.third__play:hover {
 			cursor: pointer;
 			opacity: 1;
 		}
 		.third__text {
-			margin: calc(10px + (35 - 10) * ((100vw - 320px) / (2560 - 320))) 0 0 0;
+			margin: calc(15px + (35 - 15) * ((100vw - 320px) / (2560 - 320))) 0 0 0;
 			p {
 				font-family: 'Roboto', sans-serif;
-				font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (2560 - 320)));
+				font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2560 - 320)));
 				line-height: 1.2;
 				font-weight: 700;
 				letter-spacing: 0.05em;
@@ -450,8 +453,111 @@
 		display: flex;
 		justify-content: center;
 		padding: calc(20px + (70 - 20) * ((100vw - 320px) / (2560 - 320))) calc(10px + (330 - 10) * ((100vw - 320px) / (2560 - 320)));
-		a {
-
+	}
+}
+/* seventh ================================================================================== */
+.seventh {
+	background: url(../img/background4.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	.seventh__wrapper {
+		padding: calc(20px + (70 - 20) * ((100vw - 320px) / (2560 - 320))) 0;
+		background: linear-gradient(to left,  rgba($color: #311f57, $alpha: 0.85), rgba($color: #0f0b2f, $alpha: 0.85));
+		.seventh-slider {
+			.seventh__wrapper-slider {
+				.seventh__slide {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					padding: 0 calc(10px + (330 - 10) * ((100vw - 320px) / (2560 - 320)));
+					.seventh__text {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						max-width: 775px;
+						text-align: center;
+						p:nth-child(1) {
+							font-family: 'Playfair Display', serif;
+							font-size: calc(70px + (100 - 70) * ((100vw - 320px) / (2560 - 320)));
+							font-weight: 400;
+							letter-spacing: 0.03em;
+							color: rgba($color: #fff, $alpha: 0.9);
+						}
+						p:nth-child(2) {
+							margin: 0 0 calc(20px + (50 - 20) * ((100vw - 320px) / (2560 - 320))) 0;
+							font-family: 'Playfair Display', serif;
+							font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (2560 - 320)));
+							line-height: 1.3em;
+							font-weight: 400;
+							letter-spacing: 0.025em;
+							color: rgba($color: #fff, $alpha: 0.85);
+						}
+						p:nth-child(3) {
+							font-family: 'Roboto', sans-serif;
+							font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2560 - 320)));
+							line-height: 1.222em;
+							font-weight: 900;
+							letter-spacing: 0.05em;
+							text-transform: uppercase;
+							color: #fff;
+						}
+						p:nth-child(4) {
+							font-family: 'Roboto', sans-serif;
+							font-size: calc(13px + (17 - 13) * ((100vw - 320px) / (2560 - 320)));
+							line-height: 1.29em;
+							font-weight: 300;
+							text-transform: uppercase;
+							color: rgba($color: #fff, $alpha: 0.7);
+						}
+					}
+				}
+			}
+		}
+		.seventh__mini-slider {
+			max-width: 480px;
+			margin: calc(20px + (45 - 20) * ((100vw - 320px) / (2560 - 320))) auto 0 auto;
+			.seventh__mini-wrapper {
+				.seventh__mini-slide {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 10px 0;
+					border: 1px solid orange;
+					.seventh__img {
+						img {
+							width: 45px;
+							height: 45px;
+							transition: 0.3s;
+						}
+					}
+				}
+				.swiper-slide-thumb-active {
+					.seventh__img {
+						img {
+							transform: scale(1.5);
+						}
+					}
+				}
+				.seventh__mini-slide:hover {
+					cursor: pointer;
+				}
+			}
+			.seventh__button-prev {
+				left: 0px;
+			}
+			.seventh__button-next {
+				right: 0px;
+			}
+			.seventh__button-prev:after, .seventh__button-next:after {
+				transition: 0.2s;
+				font-size: 26px;
+				color: rgba($color: #fff, $alpha: 0.5);
+			}
+			.seventh__button-prev:hover:after, .seventh__button-next:hover:after {
+				color: rgba($color: #fff, $alpha: 1);
+			}
 		}
 	}
 }
@@ -615,6 +721,15 @@ body {
 			.sixth__wrapper {
 				flex: 1 1 100%;
 				min-width: 0;
+			}
+		}
+	}
+	.seventh {
+		.seventh__wrapper {
+			.seventh__mini-slider {
+				.seventh__button-prev:after, .seventh__button-next:after {
+					color: rgba($color: #fff, $alpha: 1);
+				}
 			}
 		}
 	}
