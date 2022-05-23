@@ -62,12 +62,7 @@
 }
 .header.scroll {
 	opacity: 1;
-	pointer-events: auto;
 	background: linear-gradient(to left, #311f57, #0f0b2f);
-}
-.header.out {
-	opacity: 0;
-	pointer-events: none;
 }
 /* first ================================================================================== */
 .first {
@@ -587,14 +582,14 @@
 	}
 }
 /* ninth ================================================================================== */
-.ninth {
+.eighth {
 	display: flex;
 	width: 100%;
 	padding: calc(20px + (70 - 20) * ((100vw - 320px) / (2560 - 320))) calc(10px + (330 - 10) * ((100vw - 320px) / (2560 - 320)));
-	.ninth__left {
+	.eighth__left {
 		flex: 0 1 50%;
 		padding: 0 calc(10px + (50 - 10) * ((100vw - 320px) / (2560 - 320))) 0 0;
-		.ninth__text {
+		.eighth__text {
 			margin: 0 0 10px 0;
 			p {
 				font-family: 'Playfair Display', serif;
@@ -606,7 +601,7 @@
 				color: #413d4b;
 			}
 		}
-		.ninth__form {
+		.eighth__form {
 			display: flex;
 			flex-direction: column;
 			input, textarea {
@@ -651,10 +646,10 @@
 			}
 		}
 	}
-	.ninth__right {
+	.eighth__right {
 		flex: 0 1 50%;
 		padding: 0 0 0 calc(10px + (50 - 10) * ((100vw - 320px) / (2560 - 320)));
-		.ninth__text {
+		.eighth__text {
 			margin: 0 0 10px 0;
 			p {
 				font-family: 'Playfair Display', serif;
@@ -666,10 +661,10 @@
 				color: #413d4b;
 			}
 		}
-		.ninth__companies {
+		.eighth__companies {
 			display: flex;
 			flex-wrap: wrap;
-			.ninth__company {
+			.eighth__company {
 				flex: 0 1 50%;
 				padding: calc(20px + (30 - 20) * ((100vw - 320px) / (2560 - 320))) 10px;
 				opacity: 0.5;
@@ -678,7 +673,7 @@
 					max-width: 100%;
 				}
 			}
-			.ninth__company:hover {
+			.eighth__company:hover {
 				opacity: 1;
 			}
 		}
@@ -833,6 +828,13 @@
 	}
 }
 /* OTHER ================================================================================== */
+.anchor {
+	display: block;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+	transform: translateY(-100px);
+}
 .mainBTN {
 	padding: 12px 30px;
 	font-family: 'Hammersmith One';
@@ -1004,21 +1006,21 @@ body {
 			}
 		}
 	}
-	.ninth {
+	.eighth {
 		flex-wrap: wrap;
-		.ninth__left {
+		.eighth__left {
 			flex: 0 1 100%;
 			padding: 0;
 		}
-		.ninth__right {
+		.eighth__right {
 			flex: 0 1 100%;
 			margin: 20px 0 0 0;
 			padding: 0;
-			.ninth__text {
+			.eighth__text {
 				margin: 0;
 			}
-			.ninth__companies {
-				.ninth__company {
+			.eighth__companies {
+				.eighth__company {
 					flex: 0 1 50%;
 				}
 			}

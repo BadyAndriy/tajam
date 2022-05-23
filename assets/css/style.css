@@ -155,14 +155,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .header.scroll {
   opacity: 1;
-  pointer-events: auto;
   background: -webkit-gradient(linear, right top, left top, from(#311f57), to(#0f0b2f));
   background: linear-gradient(to left, #311f57, #0f0b2f);
-}
-
-.header.out {
-  opacity: 0;
-  pointer-events: none;
 }
 
 /* first ================================================================================== */
@@ -802,23 +796,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ninth ================================================================================== */
-.ninth {
+.eighth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: calc(20px + (70 - 20) * ((100vw - 320px) / (2560 - 320))) calc(10px + (330 - 10) * ((100vw - 320px) / (2560 - 320)));
 }
-.ninth .ninth__left {
+.eighth .eighth__left {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   padding: 0 calc(10px + (50 - 10) * ((100vw - 320px) / (2560 - 320))) 0 0;
 }
-.ninth .ninth__left .ninth__text {
+.eighth .eighth__left .eighth__text {
   margin: 0 0 10px 0;
 }
-.ninth .ninth__left .ninth__text p {
+.eighth .eighth__left .eighth__text p {
   font-family: "Playfair Display", serif;
   font-size: calc(22px + (26 - 22) * ((100vw - 320px) / (2560 - 320)));
   line-height: 1.2;
@@ -827,7 +821,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #413d4b;
 }
-.ninth .ninth__left .ninth__form {
+.eighth .eighth__left .eighth__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -836,7 +830,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.ninth .ninth__left .ninth__form input, .ninth .ninth__left .ninth__form textarea {
+.eighth .eighth__left .eighth__form input, .eighth .eighth__left .eighth__form textarea {
   margin: calc(10px + (20 - 10) * ((100vw - 320px) / (2560 - 320))) 0 0 0;
   padding: 15px 20px;
   font-family: "Roboto", sans-serif;
@@ -846,14 +840,14 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.ninth .ninth__left .ninth__form textarea {
+.eighth .eighth__left .eighth__form textarea {
   height: 200px;
   resize: none;
 }
-.ninth .ninth__left .ninth__form input:hover, .ninth .ninth__left .ninth__form input:focus, .ninth .ninth__left .ninth__form textarea:hover, .ninth .ninth__left .ninth__form textarea:focus {
+.eighth .eighth__left .eighth__form input:hover, .eighth .eighth__left .eighth__form input:focus, .eighth .eighth__left .eighth__form textarea:hover, .eighth .eighth__left .eighth__form textarea:focus {
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
-.ninth .ninth__left .ninth__form input::-webkit-input-placeholder, .ninth .ninth__left .ninth__form textarea::-webkit-input-placeholder {
+.eighth .eighth__left .eighth__form input::-webkit-input-placeholder, .eighth .eighth__left .eighth__form textarea::-webkit-input-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2560 - 320)));
   line-height: 1.2;
@@ -861,7 +855,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
   color: rgba(0, 0, 0, 0.5);
 }
-.ninth .ninth__left .ninth__form input::-moz-placeholder, .ninth .ninth__left .ninth__form textarea::-moz-placeholder {
+.eighth .eighth__left .eighth__form input::-moz-placeholder, .eighth .eighth__left .eighth__form textarea::-moz-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2560 - 320)));
   line-height: 1.2;
@@ -869,7 +863,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
   color: rgba(0, 0, 0, 0.5);
 }
-.ninth .ninth__left .ninth__form input:-ms-input-placeholder, .ninth .ninth__left .ninth__form textarea:-ms-input-placeholder {
+.eighth .eighth__left .eighth__form input:-ms-input-placeholder, .eighth .eighth__left .eighth__form textarea:-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2560 - 320)));
   line-height: 1.2;
@@ -877,7 +871,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
   color: rgba(0, 0, 0, 0.5);
 }
-.ninth .ninth__left .ninth__form input::-ms-input-placeholder, .ninth .ninth__left .ninth__form textarea::-ms-input-placeholder {
+.eighth .eighth__left .eighth__form input::-ms-input-placeholder, .eighth .eighth__left .eighth__form textarea::-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2560 - 320)));
   line-height: 1.2;
@@ -885,7 +879,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
   color: rgba(0, 0, 0, 0.5);
 }
-.ninth .ninth__left .ninth__form input::placeholder, .ninth .ninth__left .ninth__form textarea::placeholder {
+.eighth .eighth__left .eighth__form input::placeholder, .eighth .eighth__left .eighth__form textarea::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2560 - 320)));
   line-height: 1.2;
@@ -893,7 +887,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
   color: rgba(0, 0, 0, 0.5);
 }
-.ninth .ninth__left .ninth__form button {
+.eighth .eighth__left .eighth__form button {
   margin: calc(10px + (20 - 10) * ((100vw - 320px) / (2560 - 320))) 0 0 0;
   padding: 12px 30px;
   font-family: "Hammersmith One";
@@ -904,20 +898,20 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #00e0d0;
   background: #fff;
 }
-.ninth .ninth__left .ninth__form button:hover {
+.eighth .eighth__left .eighth__form button:hover {
   color: #000;
   background: #00e0d0;
 }
-.ninth .ninth__right {
+.eighth .eighth__right {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   padding: 0 0 0 calc(10px + (50 - 10) * ((100vw - 320px) / (2560 - 320)));
 }
-.ninth .ninth__right .ninth__text {
+.eighth .eighth__right .eighth__text {
   margin: 0 0 10px 0;
 }
-.ninth .ninth__right .ninth__text p {
+.eighth .eighth__right .eighth__text p {
   font-family: "Playfair Display", serif;
   font-size: calc(22px + (26 - 22) * ((100vw - 320px) / (2560 - 320)));
   line-height: 1.2;
@@ -926,14 +920,14 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #413d4b;
 }
-.ninth .ninth__right .ninth__companies {
+.eighth .eighth__right .eighth__companies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.ninth .ninth__right .ninth__companies .ninth__company {
+.eighth .eighth__right .eighth__companies .eighth__company {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
@@ -941,10 +935,10 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.5;
   text-align: center;
 }
-.ninth .ninth__right .ninth__companies .ninth__company img {
+.eighth .eighth__right .eighth__companies .eighth__company img {
   max-width: 100%;
 }
-.ninth .ninth__right .ninth__companies .ninth__company:hover {
+.eighth .eighth__right .eighth__companies .eighth__company:hover {
   opacity: 1;
 }
 
@@ -1156,6 +1150,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* OTHER ================================================================================== */
+.anchor {
+  display: block;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
 .mainBTN {
   padding: 12px 30px;
   font-family: "Hammersmith One";
@@ -1342,27 +1345,27 @@ body {
     color: white;
   }
 
-  .ninth {
+  .eighth {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .ninth .ninth__left {
+  .eighth .eighth__left {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     padding: 0;
   }
-  .ninth .ninth__right {
+  .eighth .eighth__right {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     margin: 20px 0 0 0;
     padding: 0;
   }
-  .ninth .ninth__right .ninth__text {
+  .eighth .eighth__right .eighth__text {
     margin: 0;
   }
-  .ninth .ninth__right .ninth__companies .ninth__company {
+  .eighth .eighth__right .eighth__companies .eighth__company {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
