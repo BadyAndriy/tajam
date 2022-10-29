@@ -313,7 +313,6 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/background2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 .third .third__wrapper {
   display: -webkit-box;
@@ -429,6 +428,9 @@ h1, h2, h3, h4, h5, h6 {
           flex: 0 1 33.333%;
   padding: 0 5px calc(10px + 65 * (100vw - 320px) / 2240) 5px;
 }
+.fourth .fourth__items .fourth__wrapper .fourth__item {
+  max-width: 355px;
+}
 .fourth .fourth__items .fourth__wrapper .fourth__item .fourth__img img {
   height: calc(40px + 20 * (100vw - 320px) / 2240);
 }
@@ -456,7 +458,6 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/background1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 .fifth .fifth__wrapper {
   display: -webkit-box;
@@ -651,9 +652,6 @@ h1, h2, h3, h4, h5, h6 {
 .sixth .sixth__items .sixth__wrapper .sixth__item:nth-child(3) {
   background: #a1a1a1;
 }
-.sixth .sixth__items .sixth__wrapper .sixth__item:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
 .sixth .sixth__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,7 +667,6 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/background4.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 .seventh .seventh__wrapper {
   padding: calc(20px + 50 * (100vw - 320px) / 2240) 0;
@@ -939,7 +936,6 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/background5.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 .footer .footer__wrapper {
   padding: calc(20px + 50 * (100vw - 320px) / 2240) calc(10px + 320 * (100vw - 320px) / 2240);
@@ -1265,7 +1261,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
-    padding: 120px 0;
+    padding: 20px 0;
     overflow-y: scroll;
     background: -webkit-gradient(linear, right top, left top, from(#311f57), to(#0f0b2f));
     background: linear-gradient(to left, #311f57, #0f0b2f);
@@ -1428,10 +1424,6 @@ body {
   }
 }
 @media (max-width: 425px) {
-  .fourth .fourth__items .fourth__wrapper .fourth__item .fourth__img {
-    display: none;
-  }
-
   .sixth .sixth__text {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

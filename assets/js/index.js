@@ -190,7 +190,7 @@ gsap.timeline({
 gsap.timeline({
 	scrollTrigger: {
 		trigger: ".footer",
-		start: "top 120%",
+		start: "top 200%",
 		markers: false,
 		scrub: false,
 		pin: false
