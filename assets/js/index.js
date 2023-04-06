@@ -190,7 +190,7 @@ gsap.timeline({
 gsap.timeline({
 	scrollTrigger: {
 		trigger: ".footer",
-		start: "top 200%",
+		start: "top 120%",
 		markers: false,
 		scrub: false,
 		pin: false
@@ -322,7 +322,7 @@ new Swiper('.seventh-slider',{
   },
 
   // автовисота
-  autoHeight: false,
+  autoHeight: true,
 
   // кількість слайдів для показу
   slidesPerView: 1,
